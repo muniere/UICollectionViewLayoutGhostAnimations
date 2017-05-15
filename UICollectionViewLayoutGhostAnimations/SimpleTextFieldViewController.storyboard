@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="z51-e7-9qe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Simple Text Field View Controller-->
+        <scene sceneID="gpn-6o-QFT">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="z51-e7-9qe" customClass="SimpleTextFieldViewController" customModule="UICollectionViewLayoutGhostAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lqn-j8-1l2"/>
+                        <viewControllerLayoutGuide type="bottom" id="d5F-Jh-Iud"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QN2-aL-DbK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJe-CW-V8z" userLabel="legendView">
+                                <rect key="frame" x="20" y="40" width="335" height="59.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epv-Wr-3vT">
+                                        <rect key="frame" x="10" y="34.5" width="20" height="20"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ToT-NV-Bnf"/>
+                                            <constraint firstAttribute="width" constant="20" id="yux-I5-EJT"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Legend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8g-gT-qZo">
+                                        <rect key="frame" x="5" y="5" width="57.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UITextField" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfJ-Ll-uGJ">
+                                        <rect key="frame" x="40" y="36" width="72.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="q8g-gT-qZo" firstAttribute="leading" secondItem="WJe-CW-V8z" secondAttribute="leading" constant="5" id="HVw-qT-NnG"/>
+                                    <constraint firstItem="IfJ-Ll-uGJ" firstAttribute="centerY" secondItem="epv-Wr-3vT" secondAttribute="centerY" id="Jsw-i4-5nF"/>
+                                    <constraint firstItem="epv-Wr-3vT" firstAttribute="leading" secondItem="WJe-CW-V8z" secondAttribute="leading" constant="10" id="QV0-n0-eG8"/>
+                                    <constraint firstAttribute="bottom" secondItem="epv-Wr-3vT" secondAttribute="bottom" constant="5" id="UB8-5P-bsr"/>
+                                    <constraint firstItem="IfJ-Ll-uGJ" firstAttribute="leading" secondItem="epv-Wr-3vT" secondAttribute="trailing" constant="10" id="WtJ-WH-Y9L"/>
+                                    <constraint firstItem="epv-Wr-3vT" firstAttribute="top" secondItem="q8g-gT-qZo" secondAttribute="bottom" constant="10" id="XfE-Zh-BVD"/>
+                                    <constraint firstItem="q8g-gT-qZo" firstAttribute="top" secondItem="WJe-CW-V8z" secondAttribute="top" constant="5" id="g57-VV-4Yd"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hello, World. Fizzbuzz Fizzbuzz." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XLV-uI-Q1I" userLabel="textField">
+                                <rect key="frame" x="20" y="269.5" width="255" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Uxl-bV-g60"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCN-hN-lru" userLabel="cancelButton">
+                                <rect key="frame" x="275" y="269.5" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="JE4-pR-eGS"/>
+                                    <constraint firstAttribute="height" constant="40" id="xz7-t7-xd2"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cCN-hN-lru" firstAttribute="leading" secondItem="XLV-uI-Q1I" secondAttribute="trailing" id="EBz-cS-c9W"/>
+                            <constraint firstItem="XLV-uI-Q1I" firstAttribute="leading" secondItem="QN2-aL-DbK" secondAttribute="leading" constant="20" id="JsK-AM-73X"/>
+                            <constraint firstItem="XLV-uI-Q1I" firstAttribute="centerY" secondItem="QN2-aL-DbK" secondAttribute="centerY" constant="-44" id="KRG-fx-Wa9"/>
+                            <constraint firstItem="cCN-hN-lru" firstAttribute="centerY" secondItem="QN2-aL-DbK" secondAttribute="centerY" constant="-44" id="ZT6-h9-voL"/>
+                            <constraint firstAttribute="trailing" secondItem="WJe-CW-V8z" secondAttribute="trailing" constant="20" id="ee6-Ga-ROd"/>
+                            <constraint firstAttribute="trailing" secondItem="cCN-hN-lru" secondAttribute="trailing" constant="20" id="jTO-2a-llU"/>
+                            <constraint firstItem="WJe-CW-V8z" firstAttribute="leading" secondItem="QN2-aL-DbK" secondAttribute="leading" constant="20" id="rpD-O8-h9O"/>
+                            <constraint firstItem="WJe-CW-V8z" firstAttribute="top" secondItem="lqn-j8-1l2" secondAttribute="bottom" constant="20" id="xeB-II-LZp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="cCN-hN-lru" id="wNt-eJ-9G0"/>
+                        <outlet property="cancelButtonWidth" destination="JE4-pR-eGS" id="bv7-BW-g5a"/>
+                        <outlet property="textField" destination="XLV-uI-Q1I" id="TYl-0H-JHe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J80-A9-B1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="-109"/>
+        </scene>
+    </scenes>
+</document>
